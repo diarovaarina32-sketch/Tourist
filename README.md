@@ -86,7 +86,7 @@ plt.show()
 
 #### Scatter plots (диаграммы рассеивания)
 ![диаграммарас..png](images/диаграммарас..png)
-![диаграмрас+стр.png](images/диаграмрас+стр.png)
+![диаграс+стр.png](images/диаграмрас+стр.png)
 ```python
 # Общая зависимость
 fig, ax = plt.subplots(figsize=(10,10))
