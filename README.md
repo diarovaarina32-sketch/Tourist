@@ -130,8 +130,8 @@ plt.show()
 ```
 
 #### Pair plots (матрица графиков)
-![парндиатр.png](images/парндиатр.png)
-![парццел.png](images/парццел.png)
+![парндиагр.png](images/парндиагр.png)
+![парнцел.png](images/парнцел.png)
 ```python
 # Все признаки
 sns.pairplot(data)
