@@ -14,7 +14,7 @@
 |----------------|----------|
 | Период данных | 1979-2024 гг. |
 | Количество строк | 644 |
-| Количество стран | более 15 |
+| Количество стобцов | 11 |
 | Основные показатели | Business Visitors, Holiday Visitors, Average Length of Stay, Total Visitor Spend, Spend Per Day, Total Visitor Days, Total Visitor Arrivals, VFR |
 
 ## Используемые библиотеки
