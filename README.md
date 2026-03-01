@@ -51,7 +51,7 @@ data.dtypes
 ### 2. Текстовое описание набора данных
 - **Источник данных:** Статистика туризма Новой Зеландии
 - **Описание признаков:** деловые визиты, туристические визиты, длина пребывания, траты в день, страны.
-- **Страны в датасете:** Australia, China, USA, UK, Japan, Germany и другие
+- **Страны в датасете:** Australia, China, USA, UK, Japan, Germany.
 
 ```python
 # Уникальные значения целевого признака
@@ -85,8 +85,8 @@ plt.show()
 ```
 
 #### Scatter plots (диаграммы рассеивания)
-![диаграмма рас.png](images/диаграмма рас.png)
-![диаграм рас+стр.png](images/диаграм рас+стр.png)
+![диаграммарас..png](images/диаграммарас..png)
+![диаграмрас+стр.png](images/диаграмрас+стр.png)
 ```python
 # Общая зависимость
 fig, ax = plt.subplots(figsize=(10,10))
@@ -108,7 +108,7 @@ plt.show()
 
 #### Joint plots (объединенные графики)
 ![гист2.png](images/гист2.png)
-![гист 3.png](images/гист 3.png)
+![гист3.png](images/гист3.png)
 
 ```python
 # Базовый jointplot
@@ -157,7 +157,7 @@ sns.boxplot(data=data[data['Country'].isin(['Australia', 'China', 'UK'])],
 ```
 
 #### Violin plots
-![по странам ящики.png](images/по странам ящики.png)
+![постранамящики.png](images/постранамящики.png)
 ```python
 # Базовый
 sns.violinplot(x=data['Spend Per Day'])
