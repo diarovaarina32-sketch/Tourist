@@ -176,7 +176,7 @@ sns.catplot(data=data[data['Country'].isin(['Australia', 'China', 'UK']) & data[
 #### Матрицы корреляций
 ![матр1.png](images/матр1.png)
 ![матртреуг.png](images/матртреуг.png)
-![всемет.png](images/всемет.png)
+
 
 ```python
 # Базовая корреляция (только числа)
@@ -208,6 +208,7 @@ sns.heatmap(data.corr(numeric_only=True), mask=mask, annot=True, fmt='.3f')
 ```
 
 #### Сравнение методов корреляции
+![всемет.png](images/всемет.png)
 ```python
 fig, ax = plt.subplots(1, 3, sharex='col', sharey='row', figsize=(15,5))
 
