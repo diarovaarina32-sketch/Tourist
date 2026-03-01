@@ -141,7 +141,7 @@ sns.pairplot(data, hue="Country")
 ```
 
 #### Box plots (ящики с усами)
-![ящик с усами1.png](images/ящик с усами1.png)
+![ящиксусами1.png](images/ящиксусами1.png)
 ![ящикусы2.png](images/ящикусы2.png)
 ![ящикипостран.png](images/ящикипостран.png)
 ```python
@@ -175,7 +175,7 @@ sns.catplot(data=data[data['Country'].isin(['Australia', 'China', 'UK']) & data[
 
 #### Матрицы корреляций
 ![матр1.png](images/матр1.png)
-![матртеруг.png](images/матртеруг.png)
+![матртреуг.png](images/матртреуг.png)
 ![всемет.png](images/всемет.png)
 
 ```python
