@@ -50,7 +50,7 @@ data.dtypes
 
 ### 2. Текстовое описание набора данных
 - **Источник данных:** Статистика туризма Новой Зеландии
-- **Описание признаков:** деловые визиты, туристические визиты, длина пребывания, траты и др.
+- **Описание признаков:** деловые визиты, туристические визиты, длина пребывания, траты в день, страны.
 - **Страны в датасете:** Australia, China, USA, UK, Japan, Germany и другие
 
 ```python
@@ -72,6 +72,8 @@ data.describe()
 ### 4. Визуальное исследование датасета
 
 #### Гистограммы
+![гистограмма.png](images/гистограмма.png)
+
 ```python
 # Распределение трат в день
 fig, ax = plt.subplots(figsize=(10,6))
@@ -83,6 +85,8 @@ plt.show()
 ```
 
 #### Scatter plots (диаграммы рассеивания)
+![диаграмма рас.png](images/диаграмма рас.png)
+![диаграм рас+стр.png](images/диаграм рас+стр.png)
 ```python
 # Общая зависимость
 fig, ax = plt.subplots(figsize=(10,10))
@@ -103,6 +107,9 @@ plt.show()
 ```
 
 #### Joint plots (объединенные графики)
+![гист2.png](images/гист2.png)
+![гист 3.png](images/гист 3.png)
+
 ```python
 # Базовый jointplot
 sns.jointplot(x='Average Length of Stay', y='Spend Per Day',
@@ -123,6 +130,8 @@ plt.show()
 ```
 
 #### Pair plots (матрица графиков)
+![парндиатр.png](images/парндиатр.png)
+![парццел.png](images/парццел.png)
 ```python
 # Все признаки
 sns.pairplot(data)
@@ -132,6 +141,9 @@ sns.pairplot(data, hue="Country")
 ```
 
 #### Box plots (ящики с усами)
+![ящик с усами1.png](images/ящик с усами1.png)
+![ящикусы2.png](images/ящикусы2.png)
+![ящикипостран.png](images/ящикипостран.png)
 ```python
 # Вертикальный
 sns.boxplot(x=data['Spend Per Day'])
@@ -145,6 +157,7 @@ sns.boxplot(data=data[data['Country'].isin(['Australia', 'China', 'UK'])],
 ```
 
 #### Violin plots
+![по странам ящики.png](images/по странам ящики.png)
 ```python
 # Базовый
 sns.violinplot(x=data['Spend Per Day'])
@@ -161,6 +174,10 @@ sns.catplot(data=data[data['Country'].isin(['Australia', 'China', 'UK']) & data[
 ### 5. Корреляционный анализ
 
 #### Матрицы корреляций
+![матр1.png](images/матр1.png)
+![матртеруг.png](images/матртеруг.png)
+![всемет.png](images/всемет.png)
+
 ```python
 # Базовая корреляция (только числа)
 data.corr(numeric_only=True)
@@ -172,6 +189,8 @@ data.corr(method='spearman', numeric_only=True)
 ```
 
 #### Тепловые карты
+![матр.png](images/матр.png)
+
 ```python
 # Базовая тепловая карта
 sns.heatmap(data.corr(numeric_only=True))
